@@ -17,7 +17,7 @@ def open_recipe_json_file(file_name:str)->dict:
         FileNotFoundError: If the file does not exist.
     '''
 
-    with open(f'./recipes/{file_name}') as f:
+    with open(f'./Recipes/{file_name}') as f:
         data = json.load(f)
     return data
     
